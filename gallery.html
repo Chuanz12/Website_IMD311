@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Gallery</title>
+        <link rel="stylesheet" type="text/css" href="style.css".>
+    </head>
+    <style>
+        *{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container .heading h3{
+    font-size: 3em;
+    color: bisque;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid burlywood;
+}
+
+.container .heading h3 span{
+    font-weight: 50;
+    color: whitesmoke;
+}
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: #223;
+}
+
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 45.5%;
+}
+
+.container .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 50px;
+}
+        body{
+            background-image: url(image/bg/Street\ Sunset\ by\ Brady\ Cook.jpeg);
+        }
+        button{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #009688;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+        }
+        span{
+            background: #009688;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        button:hover span{
+            width: 100%;
+        }
+
+        button:hover{
+            border: none;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="heading">
+                <h3>My <span></span>Gallery</h3>
+                <p style="color: aliceblue;">This is some of my random pictures.</p>
+            </div>
+                <div class="box">
+                
+                    <div class="dream">
+                        <img src="image/ws/me.jpg">
+                        <img src="image/ws/maggi.jpg">
+                        <img src="image/ws/maggie.jpg">
+                        <img src="image/ws/mee goreng.jpg">
+                        <img src="image/ws/mee hoon.jpg">
+
+                </div>
+
+                <div class="dream">
+                    <img src="image/ws/photo_6127325448737240565_y.jpg" height="640">
+                        <img src="image/ws/mie.jpg">
+                        <img src="image/ws/bihun soup.jpg">
+                        <img src="image/ws/bihun.jpg">
+                        <img src="image/ws/rasta.jpg">
+                </div>
+                </div>
+        </div>
+        <p>
+            <!--Creating button using button onclick-->
+            <button onclick="document.location ='Homepage.html'"><span></span>Back</button>
+        </p>
+
+    </body>
+</html>

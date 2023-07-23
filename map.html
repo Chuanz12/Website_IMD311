@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Map of Malaysia</title>
+    </head>
+        <style>
+            h1 {color: darkolivegreen; text-align: center;}
+            p {color: black; text-align: center;}
+            button{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #009688;
+            background: transparent;
+            color: #333;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+        }
+        span{
+            background: #009688;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        button:hover span{
+            width: 100%;
+        }
+
+        button:hover{
+            border: none;
+        }
+        </style>
+
+            <body>
+                <h1>Map of Malaysia</h1>
+                <p><i>Click <b>Negeri Sembilan</b> to learn more about <b>Seremban</b></i></p>
+                <p>
+                <img src="image/photo_2022-11-11_09-01-01.jpg" usemap="#malaysia-map">
+                <map name="malaysia-map">
+                <area target="_blank" alt="map malaysia" href="https://en.wikipedia.org/wiki/Seremban" 
+                coords="100,400,300,900" shape="rect">
+                </p>
+                </map>
+            
+            <p>
+                <!--Creating button using button onclick-->
+                <button onclick="document.location ='about.html'"><span></span>Back</button>
+    
+            </p>
+        </body>
+</html>

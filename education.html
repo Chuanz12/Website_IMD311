@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Education</title>
+  </head>
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(image/bg/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper{
+    margin-top: 5%;
+}
+
+.wrapper h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 52px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: gold;
+}
+
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+
+.team .team_member{
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: black;
+    position: relative;
+}
+
+.team .team_member h3 {
+    color:gold;
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+.team .team_member p.role{
+    color: green;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+button{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #009688;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+        }
+        span{
+            background: #009688;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        button:hover span{
+            width: 100%;
+        }
+
+        button:hover{
+            border: none;
+        }
+
+  </style>
+<body>
+ 
+<div class="wrapper">
+  <h1>Education</h1>
+  <div class="team">
+    <div class="team_member">
+     
+      <h3>Sekolah Kebangsaan Paroi</h3>
+      <p class="role">Primary School</p>
+      <p>SKP has been my educational home since I was seven years old. It was in this city 
+        that I received my first formal schooling.</p>
+      <a href="https://ms.wikipedia.org/wiki/Sekolah_Kebangsaan_Paroi">Learn More</a>
+
+    </div>
+    
+    <div class="team_member"><h3>Sek. Menengah Kebangsaan Panchor</h3>
+      <p class="role">Secondary School</p>
+      <p>Following the UPSR examination. I kept on learning at SMKP. I majored in 
+        geography when I was in fourth grade.</p>
+        <a href="https://ms.wikipedia.org/wiki/Sekolah_Menengah_Kebangsaan_Panchor">Learn More</a>
+    </div>
+
+    <div class="team_member"><h3>Universiti Teknologi MARA</h3>
+      <p class="role">Univeristy</p>
+      <p>I'm currently enrolled in my third higher education, and UiTM is my top choice. 
+        After completing SPM, I registered right away at the UiTM Rembau Branch to start studying for a diploma 
+        in Information Management.  </p>
+        <a href="https://nsembilan.uitm.edu.my/rembau/">Learn More</a>
+      
+        
+    </div>
+</div>
+</div>
+<p style="text-align: center;">
+  <!--Creating button using button onclick-->
+  <button onclick="document.location ='Homepage.html'"><span></span>Back</button>
+</p>
+
+
+</body>
+</html>

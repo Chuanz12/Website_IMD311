@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial;
+            font-size: 17px;
+        }
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+        }
+        .content {
+         position:absolute;
+         bottom: 0;
+         background: rgba(0, 0, 0, 0.5);
+         color: gold;
+        width: 100%;
+        padding: 20px;
+        }
+        #myBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        }
+        #myBtn:hover {
+        background: #ddd;
+        color: black;
+        }
+        .content a {
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+            line-height: -20px;
+        }
+
+        button{
+            width: 100px;
+            padding: 10px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 15px;
+            font-weight: bold;
+            border: 1px solid #009688;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+        }
+        span{
+            background: #009688;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        button:hover span{
+            width: 100%;
+        }
+
+        button:hover{
+            border: none;
+        }
+
+            </style>
+        </head>
+    <body>
+
+<video autoplay muted loop id="myVideo">
+    <source src="video/The Peanut Butter Falcon _  Official Trailer _ Roadside Attractions.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1 style="font-family: 'Times New Roman', Times, serif;">The Peanut Butter Falcon</h1>
+  <p style="font-family: 'Times New Roman', Times, serif; color: beige;">The Peanut Butter Falcon is a 2019 American comedy-drama
+    film written and directed by Tyler Nilson and Michael Schwartz, in their directorial film debut,
+    and starring Zack Gottsagen, Shia LaBeouf, Dakota Johnson and John Hawkes. The plot follows a young man with Down syndrome 
+    who escapes from an assisted living facility and befriends a wayward fisherman on the run.
+    As the two men form a rapid bond, a social worker attempts to track them. Filming took place in North Carolina and Georgia.</p> 
+     <p>
+        <!--Creating button using button onclick-->
+        <button onclick="document.location ='about.html'"><span></span>Back</button>
+    </p>
+</div>
+
+</body>
+</html>
